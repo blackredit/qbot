@@ -15,7 +15,7 @@ class RolesCommand extends Command {
 
     async run(ctx: CommandContext) {
         const roles = await robloxGroup.getRoles();
-        return ctx.reply({ embeds: [ getRoleListEmbed(roles) ] });
+        return ctx.reply({ embeds: getRoleListEmbed(roles) });
     }
 }
 
